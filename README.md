@@ -128,12 +128,12 @@ The two predictive models are separate branches from feature engineering:
                 │                           │
                 ▼                           ▼
             GraphSAGE             Transaction Risk Score
-                │
-                ▼
-               MLP
-                │
-                ▼
-          Node Risk Score
+                │                           |
+                ▼                           |
+               MLP                          | 
+                │                           |
+                ▼                           | 
+          Node Risk Score                   |  
                 │                           │
                 └─────────────┬─────────────┘
                               │
