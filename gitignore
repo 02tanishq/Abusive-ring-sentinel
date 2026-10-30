@@ -1,0 +1,58 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Project Large Datasets & Raw Data
+data/raw/*
+!data/raw/.gitkeep
+data/*.csv
+*.csv
+
+# Generated Pipeline Artifacts & Model Weights
+artifacts/*
+!artifacts/.gitkeep
+*.parquet
+*.pt
+*.pth
+*.pkl
+*.joblib
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# IDE & Editor Configurations
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Build, Distribution & Packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs & Environment Variables
+*.log
+.env
