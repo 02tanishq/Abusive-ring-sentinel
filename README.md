@@ -218,22 +218,3 @@ python src/ring_risk_score.py
 ```
 
 ---
-
-## 💼 Resume & Interview Highlights
-
-If presenting this project in machine learning and data engineering interviews:
-
-- **Graph Machine Learning & GNNs**:
-  - Built an inductive **GraphSAGE** encoder combined with an MLP head to model non-Euclidean account counterparty relationships on 11,000 nodes.
-  - Implemented strict chronological masking (`orig_first` / `dest_first`) to guarantee zero temporal data leakage during graph training.
-
-- **High-Performance Vectorization & Data Pipelines**:
-  - Re-architected pipeline bottlenecks, replacing sequential row-level Python loops with vector operations and zero-copy NumPy tensors, reducing end-to-end processing of **1.09M rows to 77 seconds**.
-  - Optimized memory footprint by discarding non-informative JSON metadata columns and utilizing PyArrow Parquet formats, cutting RAM consumption by **~1.6 GB**.
-
-- **Graph Algorithms & Subgraph Mining**:
-  - Implemented two-stage motif discovery with NetworkX: formulated a risk-prior pruning heuristic that reduced the candidate graph search space by **80.24%**, enabling bounded cycle discovery ($k \in [3, 6]$) without combinatorial blowup.
-
-- **Operational ML & Business Impact**:
-  - Designed a 6-pillar composite scoring function incorporating topological priors, temporal burstiness, and pass-through flow ratios.
-  - Formulated decision thresholds around **investigator operational capacity**, optimizing the alert boundary to balance recall against a calibrated financial investigation cost ($₹2,000$/false alert).
