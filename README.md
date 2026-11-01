@@ -18,8 +18,6 @@ Traditional fraud detection treats transactions in isolation, failing to capture
 - **Leakage-Free Validation**: Enforces strict chronological temporal splitting across both transaction (`step`-based train/test splits) and node representations (`orig_first` and `dest_first` temporal masks).
 - **Compute-Efficient Topology Discovery**: Two-stage motif detection prunes **80.24%** of candidate edges using prior risk thresholds, preventing combinatorial explosions during high-order cycle discovery (3-to-6 node rings).
 - **Operational Cost Accounting**: Directly ties model alert thresholds to operational financial impact, tracking false positives against an investigation cost model (₹2,000/investigation).
-- **75%+ Code Reduction**: Refactored ~9,378 lines of repetitive, monolithic code down to ~1,850 lines of modular, type-annotated, and testable components with unified evaluation metrics.
-
 ---
 
 ## 🏗️ System Architecture
